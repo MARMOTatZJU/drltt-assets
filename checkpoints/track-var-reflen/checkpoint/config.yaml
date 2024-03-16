@@ -1,0 +1,96 @@
+algorithm:
+  batch_size: 4096
+  learning_rate: 0.0001
+  learning_starts: 4096
+  policy: MlpPolicy
+  policy_kwargs:
+    net_arch:
+      pi: !!python/tuple
+      - 256
+      - 256
+      - 128
+      - 128
+      - 64
+      - 64
+      qf: !!python/tuple
+      - 1024
+      - 512
+      - 256
+      - 128
+  scaled_action_noise:
+    mean: !!python/tuple
+    - 0.0
+    - 0.0
+    sigma: !!python/tuple
+    - 0.9
+    - 0.3
+  tau: 0.0001
+  train_freq: !!python/tuple
+  - 4
+  - episode
+  type: TD3
+  verbose: 1
+common:
+  action_space_lb: !!python/tuple
+  - -4.5
+  - -0.5235987755983
+  action_space_ub: !!python/tuple
+  - 4.5
+  - 0.5235987755983
+environment:
+  dynamics_model_configs: !!python/tuple
+  - action_space_lb: &id001
+    - -4.5
+    - -0.5235987755983
+    action_space_ub: &id002
+    - 4.5
+    - 0.5235987755983
+    front_overhang: 0.9
+    max_lat_acc: 8.0
+    name: ShortVehicle
+    rear_overhang: 0.9
+    type: BicycleModel
+    wheelbase: 2.7
+    width: 1.8
+  - action_space_lb: *id001
+    action_space_ub: *id002
+    front_overhang: 2.3
+    max_lat_acc: 4.0
+    name: LongVehicle
+    rear_overhang: 2.0
+    type: BicycleModel
+    wheelbase: 6.1
+    width: 2.5
+  - action_space_lb: *id001
+    action_space_ub: *id002
+    front_overhang: 1.0
+    max_lat_acc: 2.0
+    name: MiddleVehicle
+    rear_overhang: 1.5
+    type: BicycleModel
+    wheelbase: 3.4
+    width: 2.65
+  init_state_lb: !!python/tuple
+  - -1.0e-08
+  - -1.0e-08
+  - -3.1415926536
+  - 0.1
+  init_state_ub: !!python/tuple
+  - 1.0e-08
+  - 1.0e-08
+  - 3.1415926536
+  - 40.0
+  n_observation_steps: 15
+  reference_line_pad_mode: repeat
+  step_interval: 0.1
+  tracking_length_lb: 20
+  tracking_length_ub: 200
+  type: TrajectoryTrackingEnv
+evaluation:
+  eval_config:
+    compute_metrics_name: compute_bicycle_model_metrics
+    n_episodes: 200
+  overriden_environment: {}
+learning:
+  log_interval: 10
+  total_timesteps: 3000000
