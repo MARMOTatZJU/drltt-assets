@@ -1,0 +1,121 @@
+2024-03-16 20:27:45,129 :: root :: INFO     :: Logging directory configured at: work_dir/track-test/checkpoint
+2024-03-16 20:27:45,133 :: root :: INFO     :: Loaded config from: configs/trajectory_tracking/config-track-base.yaml
+2024-03-16 20:27:45,134 :: root :: INFO     :: Loaded config from: configs/trajectory_tracking/config-track-tiny.yaml
+2024-03-16 20:27:45,135 :: root :: INFO     :: Loaded config from: configs/trajectory_tracking/test_samples/config-track-test-sample.yaml
+2024-03-16 20:27:45,137 :: root :: INFO     :: Saved config at: work_dir/track-test/checkpoint/config.yaml
+2024-03-16 20:27:45,138 :: root :: INFO     :: Config file backed up at: 00-config-track-base.yaml
+2024-03-16 20:27:45,138 :: root :: INFO     :: Config file backed up at: 01-config-track-tiny.yaml
+2024-03-16 20:27:45,139 :: root :: INFO     :: Config file backed up at: 02-config-track-test-sample.yaml
+2024-03-16 20:27:46,645 :: root :: INFO     :: Built algorithm.policy: TD3Policy(
+  (actor): Actor(
+    (features_extractor): FlattenExtractor(
+      (flatten): Flatten(start_dim=1, end_dim=-1)
+    )
+    (mu): Sequential(
+      (0): Linear(in_features=39, out_features=128, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=128, out_features=32, bias=True)
+      (3): ReLU()
+      (4): Linear(in_features=32, out_features=2, bias=True)
+      (5): Tanh()
+    )
+  )
+  (actor_target): Actor(
+    (features_extractor): FlattenExtractor(
+      (flatten): Flatten(start_dim=1, end_dim=-1)
+    )
+    (mu): Sequential(
+      (0): Linear(in_features=39, out_features=128, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=128, out_features=32, bias=True)
+      (3): ReLU()
+      (4): Linear(in_features=32, out_features=2, bias=True)
+      (5): Tanh()
+    )
+  )
+  (critic): ContinuousCritic(
+    (features_extractor): FlattenExtractor(
+      (flatten): Flatten(start_dim=1, end_dim=-1)
+    )
+    (qf0): Sequential(
+      (0): Linear(in_features=41, out_features=1024, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=1024, out_features=512, bias=True)
+      (3): ReLU()
+      (4): Linear(in_features=512, out_features=256, bias=True)
+      (5): ReLU()
+      (6): Linear(in_features=256, out_features=128, bias=True)
+      (7): ReLU()
+      (8): Linear(in_features=128, out_features=1, bias=True)
+    )
+    (qf1): Sequential(
+      (0): Linear(in_features=41, out_features=1024, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=1024, out_features=512, bias=True)
+      (3): ReLU()
+      (4): Linear(in_features=512, out_features=256, bias=True)
+      (5): ReLU()
+      (6): Linear(in_features=256, out_features=128, bias=True)
+      (7): ReLU()
+      (8): Linear(in_features=128, out_features=1, bias=True)
+    )
+  )
+  (critic_target): ContinuousCritic(
+    (features_extractor): FlattenExtractor(
+      (flatten): Flatten(start_dim=1, end_dim=-1)
+    )
+    (qf0): Sequential(
+      (0): Linear(in_features=41, out_features=1024, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=1024, out_features=512, bias=True)
+      (3): ReLU()
+      (4): Linear(in_features=512, out_features=256, bias=True)
+      (5): ReLU()
+      (6): Linear(in_features=256, out_features=128, bias=True)
+      (7): ReLU()
+      (8): Linear(in_features=128, out_features=1, bias=True)
+    )
+    (qf1): Sequential(
+      (0): Linear(in_features=41, out_features=1024, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=1024, out_features=512, bias=True)
+      (3): ReLU()
+      (4): Linear(in_features=512, out_features=256, bias=True)
+      (5): ReLU()
+      (6): Linear(in_features=256, out_features=128, bias=True)
+      (7): ReLU()
+      (8): Linear(in_features=128, out_features=1, bias=True)
+    )
+  )
+)
+2024-03-16 20:38:23,185 :: root :: INFO     :: SB3 Algorithm Policy saved at: work_dir/track-test/checkpoint/checkpoint.zip
+2024-03-16 20:39:33,810 :: root :: INFO     :: Environment data saved to work_dir/track-test/checkpoint/env_data.bin
+2024-03-16 20:39:34,180 :: root :: INFO     :: scenario #0
+2024-03-16 20:39:34,243 :: root :: INFO     :: scenario #1
+2024-03-16 20:39:34,299 :: root :: INFO     :: scenario #2
+2024-03-16 20:39:34,364 :: root :: INFO     :: scenario #3
+2024-03-16 20:39:34,433 :: root :: INFO     :: scenario #4
+2024-03-16 20:39:34,504 :: root :: INFO     :: scenario #5
+2024-03-16 20:39:34,571 :: root :: INFO     :: scenario #6
+2024-03-16 20:39:34,636 :: root :: INFO     :: scenario #7
+2024-03-16 20:39:34,704 :: root :: INFO     :: scenario #8
+2024-03-16 20:39:34,778 :: root :: INFO     :: scenario #9
+2024-03-16 20:39:34,855 :: root :: INFO     :: scenario #10
+2024-03-16 20:39:34,933 :: root :: INFO     :: scenario #11
+2024-03-16 20:39:35,003 :: root :: INFO     :: scenario #12
+2024-03-16 20:39:35,082 :: root :: INFO     :: scenario #13
+2024-03-16 20:39:35,158 :: root :: INFO     :: scenario #14
+2024-03-16 20:39:35,237 :: root :: INFO     :: scenario #15
+2024-03-16 20:39:35,319 :: root :: INFO     :: scenario #16
+2024-03-16 20:39:35,884 :: root :: INFO     :: scenario #17
+2024-03-16 20:39:35,979 :: root :: INFO     :: scenario #18
+2024-03-16 20:39:36,063 :: root :: INFO     :: scenario #19
+2024-03-16 20:39:36,154 :: root :: INFO     :: Report file dumped at: work_dir/track-test/checkpoint/metrics.json
+2024-03-16 20:39:36,154 :: root :: INFO     :: {"l2_distance_median":1.0004638189,"scaled_action_norm_median":0.1217538091,"reward_median":-1.0185655951}
+2024-03-16 20:39:46,483 :: root :: INFO     :: Traced JIT module saved at: work_dir/track-test/checkpoint/traced_policy.pt
+2024-03-16 20:39:46,483 :: root :: INFO     :: Generated 1024 test cases for Traced JIT module.
+2024-03-16 20:39:46,516 :: root :: INFO     :: Traced JIT module test cases saved at: work_dir/track-test/checkpoint/traced_policy_test_cases.bin
+2024-03-16 20:39:46,516 :: root :: INFO     :: Testing jit module...
+2024-03-16 20:39:46,521 :: root :: INFO     :: Loaded jit module from: work_dir/track-test/checkpoint/traced_policy.pt
+2024-03-16 20:39:46,573 :: root :: INFO     :: Loaded jit module test cases from: work_dir/track-test/checkpoint/traced_policy_test_cases.bin
+2024-03-16 20:39:46,575 :: root :: INFO     :: np.allclose(gt_actions, jit_actions)=True, rtol=0.001, atol=0.0001
