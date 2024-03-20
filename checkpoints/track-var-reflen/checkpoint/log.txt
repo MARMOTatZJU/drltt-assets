@@ -1,12 +1,12 @@
-2024-03-16 22:39:25,701 :: root :: INFO     :: Logging directory configured at: work_dir/track-var-reflen/checkpoint
-2024-03-16 22:39:25,707 :: root :: INFO     :: Loaded config from: configs/trajectory_tracking/config-track-base.yaml
-2024-03-16 22:39:25,710 :: root :: INFO     :: Loaded config from: configs/trajectory_tracking/config-track.yaml
-2024-03-16 22:39:25,713 :: root :: INFO     :: Loaded config from: configs/trajectory_tracking/config-track-var-reflen.yaml
-2024-03-16 22:39:25,718 :: root :: INFO     :: Saved config at: work_dir/track-var-reflen/checkpoint/config.yaml
-2024-03-16 22:39:25,718 :: root :: INFO     :: Config file backed up at: 00-config-track-base.yaml
-2024-03-16 22:39:25,719 :: root :: INFO     :: Config file backed up at: 01-config-track.yaml
-2024-03-16 22:39:25,719 :: root :: INFO     :: Config file backed up at: 02-config-track-var-reflen.yaml
-2024-03-16 22:39:26,422 :: root :: INFO     :: Built algorithm.policy: TD3Policy(
+2024-03-18 08:43:18,967 :: root :: INFO     :: Logging directory configured at: work_dir/track-var-reflen/checkpoint
+2024-03-18 08:43:18,974 :: root :: INFO     :: Loaded config from: configs/trajectory_tracking/config-track-base.yaml
+2024-03-18 08:43:18,978 :: root :: INFO     :: Loaded config from: configs/trajectory_tracking/config-track.yaml
+2024-03-18 08:43:18,980 :: root :: INFO     :: Loaded config from: configs/trajectory_tracking/config-track-var-reflen.yaml
+2024-03-18 08:43:18,983 :: root :: INFO     :: Saved config at: work_dir/track-var-reflen/checkpoint/config.yaml
+2024-03-18 08:43:18,984 :: root :: INFO     :: Config file backed up at: 00-config-track-base.yaml
+2024-03-18 08:43:18,984 :: root :: INFO     :: Config file backed up at: 01-config-track.yaml
+2024-03-18 08:43:18,984 :: root :: INFO     :: Config file backed up at: 02-config-track-var-reflen.yaml
+2024-03-18 08:43:21,685 :: root :: INFO     :: Built algorithm.policy: TD3Policy(
   (actor): Actor(
     (features_extractor): FlattenExtractor(
       (flatten): Flatten(start_dim=1, end_dim=-1)
@@ -104,214 +104,214 @@
     )
   )
 )
-2024-03-17 06:56:07,396 :: root :: INFO     :: SB3 Algorithm Policy saved at: work_dir/track-var-reflen/checkpoint/checkpoint.zip
-2024-03-17 06:58:58,716 :: root :: INFO     :: Environment data saved to work_dir/track-var-reflen/checkpoint/env_data.bin
-2024-03-17 06:58:59,705 :: root :: INFO     :: scenario #0
-2024-03-17 06:58:59,755 :: root :: INFO     :: scenario #1
-2024-03-17 06:58:59,847 :: root :: INFO     :: scenario #2
-2024-03-17 06:58:59,930 :: root :: INFO     :: scenario #3
-2024-03-17 06:59:00,187 :: root :: INFO     :: scenario #4
-2024-03-17 06:59:00,374 :: root :: INFO     :: scenario #5
-2024-03-17 06:59:00,419 :: root :: INFO     :: scenario #6
-2024-03-17 06:59:00,621 :: root :: INFO     :: scenario #7
-2024-03-17 06:59:00,758 :: root :: INFO     :: scenario #8
-2024-03-17 06:59:00,881 :: root :: INFO     :: scenario #9
-2024-03-17 06:59:01,046 :: root :: INFO     :: scenario #10
-2024-03-17 06:59:01,113 :: root :: INFO     :: scenario #11
-2024-03-17 06:59:02,223 :: root :: INFO     :: scenario #12
-2024-03-17 06:59:02,375 :: root :: INFO     :: scenario #13
-2024-03-17 06:59:02,476 :: root :: INFO     :: scenario #14
-2024-03-17 06:59:02,629 :: root :: INFO     :: scenario #15
-2024-03-17 06:59:02,793 :: root :: INFO     :: scenario #16
-2024-03-17 06:59:02,868 :: root :: INFO     :: scenario #17
-2024-03-17 06:59:03,132 :: root :: INFO     :: scenario #18
-2024-03-17 06:59:03,384 :: root :: INFO     :: scenario #19
-2024-03-17 06:59:03,467 :: root :: INFO     :: scenario #20
-2024-03-17 06:59:03,733 :: root :: INFO     :: scenario #21
-2024-03-17 06:59:03,992 :: root :: INFO     :: scenario #22
-2024-03-17 06:59:04,164 :: root :: INFO     :: scenario #23
-2024-03-17 06:59:04,411 :: root :: INFO     :: scenario #24
-2024-03-17 06:59:04,571 :: root :: INFO     :: scenario #25
-2024-03-17 06:59:05,762 :: root :: INFO     :: scenario #26
-2024-03-17 06:59:05,873 :: root :: INFO     :: scenario #27
-2024-03-17 06:59:06,173 :: root :: INFO     :: scenario #28
-2024-03-17 06:59:06,371 :: root :: INFO     :: scenario #29
-2024-03-17 06:59:06,533 :: root :: INFO     :: scenario #30
-2024-03-17 06:59:06,861 :: root :: INFO     :: scenario #31
-2024-03-17 06:59:07,050 :: root :: INFO     :: scenario #32
-2024-03-17 06:59:07,344 :: root :: INFO     :: scenario #33
-2024-03-17 06:59:07,648 :: root :: INFO     :: scenario #34
-2024-03-17 06:59:08,764 :: root :: INFO     :: scenario #35
-2024-03-17 06:59:09,021 :: root :: INFO     :: scenario #36
-2024-03-17 06:59:09,208 :: root :: INFO     :: scenario #37
-2024-03-17 06:59:09,509 :: root :: INFO     :: scenario #38
-2024-03-17 06:59:09,822 :: root :: INFO     :: scenario #39
-2024-03-17 06:59:10,042 :: root :: INFO     :: scenario #40
-2024-03-17 06:59:10,288 :: root :: INFO     :: scenario #41
-2024-03-17 06:59:10,458 :: root :: INFO     :: scenario #42
-2024-03-17 06:59:11,701 :: root :: INFO     :: scenario #43
-2024-03-17 06:59:11,951 :: root :: INFO     :: scenario #44
-2024-03-17 06:59:12,336 :: root :: INFO     :: scenario #45
-2024-03-17 06:59:12,692 :: root :: INFO     :: scenario #46
-2024-03-17 06:59:13,091 :: root :: INFO     :: scenario #47
-2024-03-17 06:59:13,286 :: root :: INFO     :: scenario #48
-2024-03-17 06:59:14,460 :: root :: INFO     :: scenario #49
-2024-03-17 06:59:14,745 :: root :: INFO     :: scenario #50
-2024-03-17 06:59:15,003 :: root :: INFO     :: scenario #51
-2024-03-17 06:59:15,355 :: root :: INFO     :: scenario #52
-2024-03-17 06:59:15,710 :: root :: INFO     :: scenario #53
-2024-03-17 06:59:16,850 :: root :: INFO     :: scenario #54
-2024-03-17 06:59:17,087 :: root :: INFO     :: scenario #55
-2024-03-17 06:59:17,401 :: root :: INFO     :: scenario #56
-2024-03-17 06:59:17,614 :: root :: INFO     :: scenario #57
-2024-03-17 06:59:17,916 :: root :: INFO     :: scenario #58
-2024-03-17 06:59:19,287 :: root :: INFO     :: scenario #59
-2024-03-17 06:59:19,606 :: root :: INFO     :: scenario #60
-2024-03-17 06:59:19,995 :: root :: INFO     :: scenario #61
-2024-03-17 06:59:20,367 :: root :: INFO     :: scenario #62
-2024-03-17 06:59:20,656 :: root :: INFO     :: scenario #63
-2024-03-17 06:59:22,039 :: root :: INFO     :: scenario #64
-2024-03-17 06:59:22,408 :: root :: INFO     :: scenario #65
-2024-03-17 06:59:22,818 :: root :: INFO     :: scenario #66
-2024-03-17 06:59:23,079 :: root :: INFO     :: scenario #67
-2024-03-17 06:59:24,359 :: root :: INFO     :: scenario #68
-2024-03-17 06:59:24,611 :: root :: INFO     :: scenario #69
-2024-03-17 06:59:24,862 :: root :: INFO     :: scenario #70
-2024-03-17 06:59:25,139 :: root :: INFO     :: scenario #71
-2024-03-17 06:59:26,587 :: root :: INFO     :: scenario #72
-2024-03-17 06:59:26,852 :: root :: INFO     :: scenario #73
-2024-03-17 06:59:27,167 :: root :: INFO     :: scenario #74
-2024-03-17 06:59:27,453 :: root :: INFO     :: scenario #75
-2024-03-17 06:59:28,806 :: root :: INFO     :: scenario #76
-2024-03-17 06:59:29,199 :: root :: INFO     :: scenario #77
-2024-03-17 06:59:29,601 :: root :: INFO     :: scenario #78
-2024-03-17 06:59:30,036 :: root :: INFO     :: scenario #79
-2024-03-17 06:59:31,477 :: root :: INFO     :: scenario #80
-2024-03-17 06:59:31,858 :: root :: INFO     :: scenario #81
-2024-03-17 06:59:32,174 :: root :: INFO     :: scenario #82
-2024-03-17 06:59:32,602 :: root :: INFO     :: scenario #83
-2024-03-17 06:59:34,091 :: root :: INFO     :: scenario #84
-2024-03-17 06:59:34,558 :: root :: INFO     :: scenario #85
-2024-03-17 06:59:34,948 :: root :: INFO     :: scenario #86
-2024-03-17 06:59:36,351 :: root :: INFO     :: scenario #87
-2024-03-17 06:59:36,757 :: root :: INFO     :: scenario #88
-2024-03-17 06:59:37,112 :: root :: INFO     :: scenario #89
-2024-03-17 06:59:37,468 :: root :: INFO     :: scenario #90
-2024-03-17 06:59:38,947 :: root :: INFO     :: scenario #91
-2024-03-17 06:59:39,484 :: root :: INFO     :: scenario #92
-2024-03-17 06:59:40,020 :: root :: INFO     :: scenario #93
-2024-03-17 06:59:41,390 :: root :: INFO     :: scenario #94
-2024-03-17 06:59:41,890 :: root :: INFO     :: scenario #95
-2024-03-17 06:59:42,387 :: root :: INFO     :: scenario #96
-2024-03-17 06:59:43,742 :: root :: INFO     :: scenario #97
-2024-03-17 06:59:44,262 :: root :: INFO     :: scenario #98
-2024-03-17 06:59:44,710 :: root :: INFO     :: scenario #99
-2024-03-17 06:59:46,245 :: root :: INFO     :: scenario #100
-2024-03-17 06:59:46,695 :: root :: INFO     :: scenario #101
-2024-03-17 06:59:47,191 :: root :: INFO     :: scenario #102
-2024-03-17 06:59:48,669 :: root :: INFO     :: scenario #103
-2024-03-17 06:59:49,154 :: root :: INFO     :: scenario #104
-2024-03-17 06:59:49,628 :: root :: INFO     :: scenario #105
-2024-03-17 06:59:51,164 :: root :: INFO     :: scenario #106
-2024-03-17 06:59:51,548 :: root :: INFO     :: scenario #107
-2024-03-17 06:59:52,047 :: root :: INFO     :: scenario #108
-2024-03-17 06:59:53,592 :: root :: INFO     :: scenario #109
-2024-03-17 06:59:54,022 :: root :: INFO     :: scenario #110
-2024-03-17 06:59:55,631 :: root :: INFO     :: scenario #111
-2024-03-17 06:59:56,177 :: root :: INFO     :: scenario #112
-2024-03-17 06:59:56,624 :: root :: INFO     :: scenario #113
-2024-03-17 06:59:58,238 :: root :: INFO     :: scenario #114
-2024-03-17 06:59:58,753 :: root :: INFO     :: scenario #115
-2024-03-17 06:59:59,180 :: root :: INFO     :: scenario #116
-2024-03-17 07:00:00,620 :: root :: INFO     :: scenario #117
-2024-03-17 07:00:01,136 :: root :: INFO     :: scenario #118
-2024-03-17 07:00:01,662 :: root :: INFO     :: scenario #119
-2024-03-17 07:00:03,156 :: root :: INFO     :: scenario #120
-2024-03-17 07:00:03,565 :: root :: INFO     :: scenario #121
-2024-03-17 07:00:05,162 :: root :: INFO     :: scenario #122
-2024-03-17 07:00:05,785 :: root :: INFO     :: scenario #123
-2024-03-17 07:00:06,412 :: root :: INFO     :: scenario #124
-2024-03-17 07:00:07,932 :: root :: INFO     :: scenario #125
-2024-03-17 07:00:08,362 :: root :: INFO     :: scenario #126
-2024-03-17 07:00:10,006 :: root :: INFO     :: scenario #127
-2024-03-17 07:00:10,585 :: root :: INFO     :: scenario #128
-2024-03-17 07:00:11,133 :: root :: INFO     :: scenario #129
-2024-03-17 07:00:12,628 :: root :: INFO     :: scenario #130
-2024-03-17 07:00:13,093 :: root :: INFO     :: scenario #131
-2024-03-17 07:00:14,640 :: root :: INFO     :: scenario #132
-2024-03-17 07:00:15,163 :: root :: INFO     :: scenario #133
-2024-03-17 07:00:16,698 :: root :: INFO     :: scenario #134
-2024-03-17 07:00:17,218 :: root :: INFO     :: scenario #135
-2024-03-17 07:00:17,690 :: root :: INFO     :: scenario #136
-2024-03-17 07:00:19,327 :: root :: INFO     :: scenario #137
-2024-03-17 07:00:19,940 :: root :: INFO     :: scenario #138
-2024-03-17 07:00:21,642 :: root :: INFO     :: scenario #139
-2024-03-17 07:00:22,141 :: root :: INFO     :: scenario #140
-2024-03-17 07:00:23,758 :: root :: INFO     :: scenario #141
-2024-03-17 07:00:24,220 :: root :: INFO     :: scenario #142
-2024-03-17 07:00:26,011 :: root :: INFO     :: scenario #143
-2024-03-17 07:00:26,528 :: root :: INFO     :: scenario #144
-2024-03-17 07:00:27,134 :: root :: INFO     :: scenario #145
-2024-03-17 07:00:28,768 :: root :: INFO     :: scenario #146
-2024-03-17 07:00:29,398 :: root :: INFO     :: scenario #147
-2024-03-17 07:00:31,148 :: root :: INFO     :: scenario #148
-2024-03-17 07:00:31,678 :: root :: INFO     :: scenario #149
-2024-03-17 07:00:33,378 :: root :: INFO     :: scenario #150
-2024-03-17 07:00:33,951 :: root :: INFO     :: scenario #151
-2024-03-17 07:00:35,583 :: root :: INFO     :: scenario #152
-2024-03-17 07:00:36,153 :: root :: INFO     :: scenario #153
-2024-03-17 07:00:36,697 :: root :: INFO     :: scenario #154
-2024-03-17 07:00:38,237 :: root :: INFO     :: scenario #155
-2024-03-17 07:00:38,912 :: root :: INFO     :: scenario #156
-2024-03-17 07:00:40,523 :: root :: INFO     :: scenario #157
-2024-03-17 07:00:41,153 :: root :: INFO     :: scenario #158
-2024-03-17 07:00:42,789 :: root :: INFO     :: scenario #159
-2024-03-17 07:00:43,477 :: root :: INFO     :: scenario #160
-2024-03-17 07:00:45,107 :: root :: INFO     :: scenario #161
-2024-03-17 07:00:45,835 :: root :: INFO     :: scenario #162
-2024-03-17 07:00:47,614 :: root :: INFO     :: scenario #163
-2024-03-17 07:00:48,199 :: root :: INFO     :: scenario #164
-2024-03-17 07:00:49,911 :: root :: INFO     :: scenario #165
-2024-03-17 07:00:51,803 :: root :: INFO     :: scenario #166
-2024-03-17 07:00:52,514 :: root :: INFO     :: scenario #167
-2024-03-17 07:00:54,452 :: root :: INFO     :: scenario #168
-2024-03-17 07:00:55,059 :: root :: INFO     :: scenario #169
-2024-03-17 07:00:55,688 :: root :: INFO     :: scenario #170
-2024-03-17 07:00:57,368 :: root :: INFO     :: scenario #171
-2024-03-17 07:00:59,243 :: root :: INFO     :: scenario #172
-2024-03-17 07:00:59,946 :: root :: INFO     :: scenario #173
-2024-03-17 07:01:01,806 :: root :: INFO     :: scenario #174
-2024-03-17 07:01:02,475 :: root :: INFO     :: scenario #175
-2024-03-17 07:01:04,395 :: root :: INFO     :: scenario #176
-2024-03-17 07:01:05,056 :: root :: INFO     :: scenario #177
-2024-03-17 07:01:06,997 :: root :: INFO     :: scenario #178
-2024-03-17 07:01:07,724 :: root :: INFO     :: scenario #179
-2024-03-17 07:01:09,502 :: root :: INFO     :: scenario #180
-2024-03-17 07:01:10,110 :: root :: INFO     :: scenario #181
-2024-03-17 07:01:12,043 :: root :: INFO     :: scenario #182
-2024-03-17 07:01:12,677 :: root :: INFO     :: scenario #183
-2024-03-17 07:01:14,425 :: root :: INFO     :: scenario #184
-2024-03-17 07:01:15,110 :: root :: INFO     :: scenario #185
-2024-03-17 07:01:16,933 :: root :: INFO     :: scenario #186
-2024-03-17 07:01:17,601 :: root :: INFO     :: scenario #187
-2024-03-17 07:01:19,361 :: root :: INFO     :: scenario #188
-2024-03-17 07:01:21,198 :: root :: INFO     :: scenario #189
-2024-03-17 07:01:21,965 :: root :: INFO     :: scenario #190
-2024-03-17 07:01:23,881 :: root :: INFO     :: scenario #191
-2024-03-17 07:01:24,606 :: root :: INFO     :: scenario #192
-2024-03-17 07:01:26,547 :: root :: INFO     :: scenario #193
-2024-03-17 07:01:27,367 :: root :: INFO     :: scenario #194
-2024-03-17 07:01:29,123 :: root :: INFO     :: scenario #195
-2024-03-17 07:01:30,979 :: root :: INFO     :: scenario #196
-2024-03-17 07:01:31,821 :: root :: INFO     :: scenario #197
-2024-03-17 07:01:33,743 :: root :: INFO     :: scenario #198
-2024-03-17 07:01:34,570 :: root :: INFO     :: scenario #199
-2024-03-17 07:01:36,459 :: root :: INFO     :: Report file dumped at: work_dir/track-var-reflen/checkpoint/metrics.json
-2024-03-17 07:01:36,459 :: root :: INFO     :: {"l2_distance_median":0.1760858944,"scaled_action_norm_median":0.1249955107,"reward_median":-0.2083396539}
-2024-03-17 07:01:59,463 :: root :: INFO     :: Traced JIT module saved at: work_dir/track-var-reflen/checkpoint/traced_policy.pt
-2024-03-17 07:01:59,463 :: root :: INFO     :: Generated 1024 test cases for Traced JIT module.
-2024-03-17 07:01:59,496 :: root :: INFO     :: Traced JIT module test cases saved at: work_dir/track-var-reflen/checkpoint/traced_policy_test_cases.bin
-2024-03-17 07:01:59,497 :: root :: INFO     :: Testing jit module...
-2024-03-17 07:01:59,502 :: root :: INFO     :: Loaded jit module from: work_dir/track-var-reflen/checkpoint/traced_policy.pt
-2024-03-17 07:01:59,548 :: root :: INFO     :: Loaded jit module test cases from: work_dir/track-var-reflen/checkpoint/traced_policy_test_cases.bin
-2024-03-17 07:01:59,566 :: root :: INFO     :: np.allclose(gt_actions, jit_actions)=True, rtol=0.001, atol=0.0001
+2024-03-19 01:39:23,612 :: root :: INFO     :: SB3 Algorithm Policy saved at: work_dir/track-var-reflen/checkpoint/checkpoint.zip
+2024-03-19 01:49:09,176 :: root :: INFO     :: Environment data saved to work_dir/track-var-reflen/checkpoint/env_data.bin
+2024-03-19 01:49:10,508 :: root :: INFO     :: scenario #0
+2024-03-19 01:49:11,371 :: root :: INFO     :: scenario #1
+2024-03-19 01:49:12,225 :: root :: INFO     :: scenario #2
+2024-03-19 01:49:12,983 :: root :: INFO     :: scenario #3
+2024-03-19 01:49:13,488 :: root :: INFO     :: scenario #4
+2024-03-19 01:49:14,517 :: root :: INFO     :: scenario #5
+2024-03-19 01:49:14,936 :: root :: INFO     :: scenario #6
+2024-03-19 01:49:15,246 :: root :: INFO     :: scenario #7
+2024-03-19 01:49:15,961 :: root :: INFO     :: scenario #8
+2024-03-19 01:49:16,681 :: root :: INFO     :: scenario #9
+2024-03-19 01:49:17,690 :: root :: INFO     :: scenario #10
+2024-03-19 01:49:18,632 :: root :: INFO     :: scenario #11
+2024-03-19 01:49:19,381 :: root :: INFO     :: scenario #12
+2024-03-19 01:49:20,164 :: root :: INFO     :: scenario #13
+2024-03-19 01:49:20,649 :: root :: INFO     :: scenario #14
+2024-03-19 01:49:22,602 :: root :: INFO     :: scenario #15
+2024-03-19 01:49:23,141 :: root :: INFO     :: scenario #16
+2024-03-19 01:49:23,474 :: root :: INFO     :: scenario #17
+2024-03-19 01:49:24,429 :: root :: INFO     :: scenario #18
+2024-03-19 01:49:25,233 :: root :: INFO     :: scenario #19
+2024-03-19 01:49:25,999 :: root :: INFO     :: scenario #20
+2024-03-19 01:49:26,644 :: root :: INFO     :: scenario #21
+2024-03-19 01:49:27,353 :: root :: INFO     :: scenario #22
+2024-03-19 01:49:27,623 :: root :: INFO     :: scenario #23
+2024-03-19 01:49:28,138 :: root :: INFO     :: scenario #24
+2024-03-19 01:49:30,213 :: root :: INFO     :: scenario #25
+2024-03-19 01:49:30,609 :: root :: INFO     :: scenario #26
+2024-03-19 01:49:31,214 :: root :: INFO     :: scenario #27
+2024-03-19 01:49:31,846 :: root :: INFO     :: scenario #28
+2024-03-19 01:49:32,366 :: root :: INFO     :: scenario #29
+2024-03-19 01:49:32,588 :: root :: INFO     :: scenario #30
+2024-03-19 01:49:33,098 :: root :: INFO     :: scenario #31
+2024-03-19 01:49:33,513 :: root :: INFO     :: scenario #32
+2024-03-19 01:49:33,949 :: root :: INFO     :: scenario #33
+2024-03-19 01:49:35,728 :: root :: INFO     :: scenario #34
+2024-03-19 01:49:36,698 :: root :: INFO     :: scenario #35
+2024-03-19 01:49:37,063 :: root :: INFO     :: scenario #36
+2024-03-19 01:49:38,059 :: root :: INFO     :: scenario #37
+2024-03-19 01:49:38,746 :: root :: INFO     :: scenario #38
+2024-03-19 01:49:39,423 :: root :: INFO     :: scenario #39
+2024-03-19 01:49:41,113 :: root :: INFO     :: scenario #40
+2024-03-19 01:49:41,470 :: root :: INFO     :: scenario #41
+2024-03-19 01:49:41,841 :: root :: INFO     :: scenario #42
+2024-03-19 01:49:42,662 :: root :: INFO     :: scenario #43
+2024-03-19 01:49:42,947 :: root :: INFO     :: scenario #44
+2024-03-19 01:49:43,918 :: root :: INFO     :: scenario #45
+2024-03-19 01:49:45,573 :: root :: INFO     :: scenario #46
+2024-03-19 01:49:45,962 :: root :: INFO     :: scenario #47
+2024-03-19 01:49:46,815 :: root :: INFO     :: scenario #48
+2024-03-19 01:49:47,692 :: root :: INFO     :: scenario #49
+2024-03-19 01:49:48,700 :: root :: INFO     :: scenario #50
+2024-03-19 01:49:49,814 :: root :: INFO     :: scenario #51
+2024-03-19 01:49:51,152 :: root :: INFO     :: scenario #52
+2024-03-19 01:49:52,080 :: root :: INFO     :: scenario #53
+2024-03-19 01:49:52,951 :: root :: INFO     :: scenario #54
+2024-03-19 01:49:53,408 :: root :: INFO     :: scenario #55
+2024-03-19 01:49:54,402 :: root :: INFO     :: scenario #56
+2024-03-19 01:49:56,509 :: root :: INFO     :: scenario #57
+2024-03-19 01:49:57,320 :: root :: INFO     :: scenario #58
+2024-03-19 01:49:58,402 :: root :: INFO     :: scenario #59
+2024-03-19 01:49:58,963 :: root :: INFO     :: scenario #60
+2024-03-19 01:50:00,562 :: root :: INFO     :: scenario #61
+2024-03-19 01:50:01,064 :: root :: INFO     :: scenario #62
+2024-03-19 01:50:01,410 :: root :: INFO     :: scenario #63
+2024-03-19 01:50:01,796 :: root :: INFO     :: scenario #64
+2024-03-19 01:50:03,634 :: root :: INFO     :: scenario #65
+2024-03-19 01:50:04,219 :: root :: INFO     :: scenario #66
+2024-03-19 01:50:05,413 :: root :: INFO     :: scenario #67
+2024-03-19 01:50:06,066 :: root :: INFO     :: scenario #68
+2024-03-19 01:50:06,657 :: root :: INFO     :: scenario #69
+2024-03-19 01:50:07,952 :: root :: INFO     :: scenario #70
+2024-03-19 01:50:08,318 :: root :: INFO     :: scenario #71
+2024-03-19 01:50:09,026 :: root :: INFO     :: scenario #72
+2024-03-19 01:50:11,003 :: root :: INFO     :: scenario #73
+2024-03-19 01:50:11,386 :: root :: INFO     :: scenario #74
+2024-03-19 01:50:12,210 :: root :: INFO     :: scenario #75
+2024-03-19 01:50:13,054 :: root :: INFO     :: scenario #76
+2024-03-19 01:50:14,844 :: root :: INFO     :: scenario #77
+2024-03-19 01:50:15,552 :: root :: INFO     :: scenario #78
+2024-03-19 01:50:16,561 :: root :: INFO     :: scenario #79
+2024-03-19 01:50:16,933 :: root :: INFO     :: scenario #80
+2024-03-19 01:50:18,320 :: root :: INFO     :: scenario #81
+2024-03-19 01:50:19,495 :: root :: INFO     :: scenario #82
+2024-03-19 01:50:20,619 :: root :: INFO     :: scenario #83
+2024-03-19 01:50:21,252 :: root :: INFO     :: scenario #84
+2024-03-19 01:50:22,686 :: root :: INFO     :: scenario #85
+2024-03-19 01:50:23,640 :: root :: INFO     :: scenario #86
+2024-03-19 01:50:24,097 :: root :: INFO     :: scenario #87
+2024-03-19 01:50:25,851 :: root :: INFO     :: scenario #88
+2024-03-19 01:50:26,712 :: root :: INFO     :: scenario #89
+2024-03-19 01:50:27,279 :: root :: INFO     :: scenario #90
+2024-03-19 01:50:28,264 :: root :: INFO     :: scenario #91
+2024-03-19 01:50:30,032 :: root :: INFO     :: scenario #92
+2024-03-19 01:50:30,600 :: root :: INFO     :: scenario #93
+2024-03-19 01:50:31,625 :: root :: INFO     :: scenario #94
+2024-03-19 01:50:33,799 :: root :: INFO     :: scenario #95
+2024-03-19 01:50:35,014 :: root :: INFO     :: scenario #96
+2024-03-19 01:50:35,838 :: root :: INFO     :: scenario #97
+2024-03-19 01:50:37,677 :: root :: INFO     :: scenario #98
+2024-03-19 01:50:38,851 :: root :: INFO     :: scenario #99
+2024-03-19 01:50:39,414 :: root :: INFO     :: scenario #100
+2024-03-19 01:50:41,674 :: root :: INFO     :: scenario #101
+2024-03-19 01:50:42,533 :: root :: INFO     :: scenario #102
+2024-03-19 01:50:43,065 :: root :: INFO     :: scenario #103
+2024-03-19 01:50:45,281 :: root :: INFO     :: scenario #104
+2024-03-19 01:50:46,414 :: root :: INFO     :: scenario #105
+2024-03-19 01:50:46,973 :: root :: INFO     :: scenario #106
+2024-03-19 01:50:48,768 :: root :: INFO     :: scenario #107
+2024-03-19 01:50:49,502 :: root :: INFO     :: scenario #108
+2024-03-19 01:50:51,360 :: root :: INFO     :: scenario #109
+2024-03-19 01:50:51,818 :: root :: INFO     :: scenario #110
+2024-03-19 01:50:53,027 :: root :: INFO     :: scenario #111
+2024-03-19 01:50:55,355 :: root :: INFO     :: scenario #112
+2024-03-19 01:50:56,378 :: root :: INFO     :: scenario #113
+2024-03-19 01:50:57,683 :: root :: INFO     :: scenario #114
+2024-03-19 01:50:59,474 :: root :: INFO     :: scenario #115
+2024-03-19 01:51:00,678 :: root :: INFO     :: scenario #116
+2024-03-19 01:51:02,933 :: root :: INFO     :: scenario #117
+2024-03-19 01:51:04,221 :: root :: INFO     :: scenario #118
+2024-03-19 01:51:04,822 :: root :: INFO     :: scenario #119
+2024-03-19 01:51:06,715 :: root :: INFO     :: scenario #120
+2024-03-19 01:51:07,355 :: root :: INFO     :: scenario #121
+2024-03-19 01:51:07,952 :: root :: INFO     :: scenario #122
+2024-03-19 01:51:09,502 :: root :: INFO     :: scenario #123
+2024-03-19 01:51:10,456 :: root :: INFO     :: scenario #124
+2024-03-19 01:51:12,074 :: root :: INFO     :: scenario #125
+2024-03-19 01:51:12,571 :: root :: INFO     :: scenario #126
+2024-03-19 01:51:13,088 :: root :: INFO     :: scenario #127
+2024-03-19 01:51:14,870 :: root :: INFO     :: scenario #128
+2024-03-19 01:51:16,192 :: root :: INFO     :: scenario #129
+2024-03-19 01:51:18,366 :: root :: INFO     :: scenario #130
+2024-03-19 01:51:19,782 :: root :: INFO     :: scenario #131
+2024-03-19 01:51:21,862 :: root :: INFO     :: scenario #132
+2024-03-19 01:51:22,439 :: root :: INFO     :: scenario #133
+2024-03-19 01:51:23,718 :: root :: INFO     :: scenario #134
+2024-03-19 01:51:25,495 :: root :: INFO     :: scenario #135
+2024-03-19 01:51:26,118 :: root :: INFO     :: scenario #136
+2024-03-19 01:51:28,105 :: root :: INFO     :: scenario #137
+2024-03-19 01:51:29,262 :: root :: INFO     :: scenario #138
+2024-03-19 01:51:29,950 :: root :: INFO     :: scenario #139
+2024-03-19 01:51:32,127 :: root :: INFO     :: scenario #140
+2024-03-19 01:51:33,044 :: root :: INFO     :: scenario #141
+2024-03-19 01:51:34,685 :: root :: INFO     :: scenario #142
+2024-03-19 01:51:35,948 :: root :: INFO     :: scenario #143
+2024-03-19 01:51:37,913 :: root :: INFO     :: scenario #144
+2024-03-19 01:51:39,034 :: root :: INFO     :: scenario #145
+2024-03-19 01:51:40,912 :: root :: INFO     :: scenario #146
+2024-03-19 01:51:41,506 :: root :: INFO     :: scenario #147
+2024-03-19 01:51:42,123 :: root :: INFO     :: scenario #148
+2024-03-19 01:51:44,127 :: root :: INFO     :: scenario #149
+2024-03-19 01:51:45,567 :: root :: INFO     :: scenario #150
+2024-03-19 01:51:47,258 :: root :: INFO     :: scenario #151
+2024-03-19 01:51:47,953 :: root :: INFO     :: scenario #152
+2024-03-19 01:51:49,986 :: root :: INFO     :: scenario #153
+2024-03-19 01:51:50,986 :: root :: INFO     :: scenario #154
+2024-03-19 01:51:52,800 :: root :: INFO     :: scenario #155
+2024-03-19 01:51:53,697 :: root :: INFO     :: scenario #156
+2024-03-19 01:51:54,910 :: root :: INFO     :: scenario #157
+2024-03-19 01:51:57,446 :: root :: INFO     :: scenario #158
+2024-03-19 01:51:58,142 :: root :: INFO     :: scenario #159
+2024-03-19 01:51:59,953 :: root :: INFO     :: scenario #160
+2024-03-19 01:52:01,102 :: root :: INFO     :: scenario #161
+2024-03-19 01:52:02,917 :: root :: INFO     :: scenario #162
+2024-03-19 01:52:04,196 :: root :: INFO     :: scenario #163
+2024-03-19 01:52:05,899 :: root :: INFO     :: scenario #164
+2024-03-19 01:52:07,190 :: root :: INFO     :: scenario #165
+2024-03-19 01:52:09,568 :: root :: INFO     :: scenario #166
+2024-03-19 01:52:11,028 :: root :: INFO     :: scenario #167
+2024-03-19 01:52:12,695 :: root :: INFO     :: scenario #168
+2024-03-19 01:52:15,145 :: root :: INFO     :: scenario #169
+2024-03-19 01:52:16,476 :: root :: INFO     :: scenario #170
+2024-03-19 01:52:17,690 :: root :: INFO     :: scenario #171
+2024-03-19 01:52:19,719 :: root :: INFO     :: scenario #172
+2024-03-19 01:52:22,006 :: root :: INFO     :: scenario #173
+2024-03-19 01:52:22,806 :: root :: INFO     :: scenario #174
+2024-03-19 01:52:24,666 :: root :: INFO     :: scenario #175
+2024-03-19 01:52:25,750 :: root :: INFO     :: scenario #176
+2024-03-19 01:52:27,932 :: root :: INFO     :: scenario #177
+2024-03-19 01:52:29,349 :: root :: INFO     :: scenario #178
+2024-03-19 01:52:30,320 :: root :: INFO     :: scenario #179
+2024-03-19 01:52:32,249 :: root :: INFO     :: scenario #180
+2024-03-19 01:52:34,134 :: root :: INFO     :: scenario #181
+2024-03-19 01:52:35,639 :: root :: INFO     :: scenario #182
+2024-03-19 01:52:38,109 :: root :: INFO     :: scenario #183
+2024-03-19 01:52:38,817 :: root :: INFO     :: scenario #184
+2024-03-19 01:52:41,189 :: root :: INFO     :: scenario #185
+2024-03-19 01:52:42,085 :: root :: INFO     :: scenario #186
+2024-03-19 01:52:44,297 :: root :: INFO     :: scenario #187
+2024-03-19 01:52:45,117 :: root :: INFO     :: scenario #188
+2024-03-19 01:52:46,945 :: root :: INFO     :: scenario #189
+2024-03-19 01:52:48,325 :: root :: INFO     :: scenario #190
+2024-03-19 01:52:50,245 :: root :: INFO     :: scenario #191
+2024-03-19 01:52:50,915 :: root :: INFO     :: scenario #192
+2024-03-19 01:52:52,894 :: root :: INFO     :: scenario #193
+2024-03-19 01:52:55,322 :: root :: INFO     :: scenario #194
+2024-03-19 01:52:56,112 :: root :: INFO     :: scenario #195
+2024-03-19 01:52:58,127 :: root :: INFO     :: scenario #196
+2024-03-19 01:52:58,823 :: root :: INFO     :: scenario #197
+2024-03-19 01:53:01,358 :: root :: INFO     :: scenario #198
+2024-03-19 01:53:02,541 :: root :: INFO     :: scenario #199
+2024-03-19 01:53:04,452 :: root :: INFO     :: Report file dumped at: work_dir/track-var-reflen/checkpoint/metrics.json
+2024-03-19 01:53:04,452 :: root :: INFO     :: {"l2_distance_median":0.159872763,"scaled_action_norm_median":0.1277500186,"reward_median":-0.1963107772}
+2024-03-19 01:53:30,387 :: root :: INFO     :: Traced JIT module saved at: work_dir/track-var-reflen/checkpoint/traced_policy.pt
+2024-03-19 01:53:30,387 :: root :: INFO     :: Generated 1024 test cases for Traced JIT module.
+2024-03-19 01:53:30,420 :: root :: INFO     :: Traced JIT module test cases saved at: work_dir/track-var-reflen/checkpoint/traced_policy_test_cases.bin
+2024-03-19 01:53:30,420 :: root :: INFO     :: Testing jit module...
+2024-03-19 01:53:30,425 :: root :: INFO     :: Loaded jit module from: work_dir/track-var-reflen/checkpoint/traced_policy.pt
+2024-03-19 01:53:30,473 :: root :: INFO     :: Loaded jit module test cases from: work_dir/track-var-reflen/checkpoint/traced_policy_test_cases.bin
+2024-03-19 01:53:30,557 :: root :: INFO     :: np.allclose(gt_actions, jit_actions)=True, rtol=0.001, atol=0.0001
