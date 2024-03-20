@@ -1,0 +1,6 @@
+
+algorithm:
+  policy_kwargs:
+    net_arch:
+      pi: [128, 32]
+      qf: [1024, 512, 256, 128]

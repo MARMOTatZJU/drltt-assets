@@ -1,0 +1,299 @@
+2024-03-17 07:20:01,914 :: root :: INFO     :: Logging directory configured at: work_dir/track-tiny/checkpoint
+2024-03-17 07:20:01,921 :: root :: INFO     :: Loaded config from: configs/trajectory_tracking/config-track-base.yaml
+2024-03-17 07:20:01,924 :: root :: INFO     :: Loaded config from: configs/trajectory_tracking/config-track-tiny.yaml
+2024-03-17 07:20:01,927 :: root :: INFO     :: Saved config at: work_dir/track-tiny/checkpoint/config.yaml
+2024-03-17 07:20:01,927 :: root :: INFO     :: Config file backed up at: 00-config-track-base.yaml
+2024-03-17 07:20:01,927 :: root :: INFO     :: Config file backed up at: 01-config-track-tiny.yaml
+2024-03-17 07:20:02,625 :: root :: INFO     :: Built algorithm.policy: TD3Policy(
+  (actor): Actor(
+    (features_extractor): FlattenExtractor(
+      (flatten): Flatten(start_dim=1, end_dim=-1)
+    )
+    (mu): Sequential(
+      (0): Linear(in_features=39, out_features=128, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=128, out_features=32, bias=True)
+      (3): ReLU()
+      (4): Linear(in_features=32, out_features=2, bias=True)
+      (5): Tanh()
+    )
+  )
+  (actor_target): Actor(
+    (features_extractor): FlattenExtractor(
+      (flatten): Flatten(start_dim=1, end_dim=-1)
+    )
+    (mu): Sequential(
+      (0): Linear(in_features=39, out_features=128, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=128, out_features=32, bias=True)
+      (3): ReLU()
+      (4): Linear(in_features=32, out_features=2, bias=True)
+      (5): Tanh()
+    )
+  )
+  (critic): ContinuousCritic(
+    (features_extractor): FlattenExtractor(
+      (flatten): Flatten(start_dim=1, end_dim=-1)
+    )
+    (qf0): Sequential(
+      (0): Linear(in_features=41, out_features=1024, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=1024, out_features=512, bias=True)
+      (3): ReLU()
+      (4): Linear(in_features=512, out_features=256, bias=True)
+      (5): ReLU()
+      (6): Linear(in_features=256, out_features=128, bias=True)
+      (7): ReLU()
+      (8): Linear(in_features=128, out_features=1, bias=True)
+    )
+    (qf1): Sequential(
+      (0): Linear(in_features=41, out_features=1024, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=1024, out_features=512, bias=True)
+      (3): ReLU()
+      (4): Linear(in_features=512, out_features=256, bias=True)
+      (5): ReLU()
+      (6): Linear(in_features=256, out_features=128, bias=True)
+      (7): ReLU()
+      (8): Linear(in_features=128, out_features=1, bias=True)
+    )
+  )
+  (critic_target): ContinuousCritic(
+    (features_extractor): FlattenExtractor(
+      (flatten): Flatten(start_dim=1, end_dim=-1)
+    )
+    (qf0): Sequential(
+      (0): Linear(in_features=41, out_features=1024, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=1024, out_features=512, bias=True)
+      (3): ReLU()
+      (4): Linear(in_features=512, out_features=256, bias=True)
+      (5): ReLU()
+      (6): Linear(in_features=256, out_features=128, bias=True)
+      (7): ReLU()
+      (8): Linear(in_features=128, out_features=1, bias=True)
+    )
+    (qf1): Sequential(
+      (0): Linear(in_features=41, out_features=1024, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=1024, out_features=512, bias=True)
+      (3): ReLU()
+      (4): Linear(in_features=512, out_features=256, bias=True)
+      (5): ReLU()
+      (6): Linear(in_features=256, out_features=128, bias=True)
+      (7): ReLU()
+      (8): Linear(in_features=128, out_features=1, bias=True)
+    )
+  )
+)
+2024-03-17 09:47:13,505 :: root :: INFO     :: SB3 Algorithm Policy saved at: work_dir/track-tiny/checkpoint/checkpoint.zip
+2024-03-17 09:48:26,577 :: root :: INFO     :: Environment data saved to work_dir/track-tiny/checkpoint/env_data.bin
+2024-03-17 09:48:27,076 :: root :: INFO     :: scenario #0
+2024-03-17 09:48:27,137 :: root :: INFO     :: scenario #1
+2024-03-17 09:48:27,200 :: root :: INFO     :: scenario #2
+2024-03-17 09:48:27,264 :: root :: INFO     :: scenario #3
+2024-03-17 09:48:27,330 :: root :: INFO     :: scenario #4
+2024-03-17 09:48:27,404 :: root :: INFO     :: scenario #5
+2024-03-17 09:48:27,473 :: root :: INFO     :: scenario #6
+2024-03-17 09:48:27,544 :: root :: INFO     :: scenario #7
+2024-03-17 09:48:27,616 :: root :: INFO     :: scenario #8
+2024-03-17 09:48:27,692 :: root :: INFO     :: scenario #9
+2024-03-17 09:48:27,770 :: root :: INFO     :: scenario #10
+2024-03-17 09:48:27,846 :: root :: INFO     :: scenario #11
+2024-03-17 09:48:27,923 :: root :: INFO     :: scenario #12
+2024-03-17 09:48:28,002 :: root :: INFO     :: scenario #13
+2024-03-17 09:48:28,089 :: root :: INFO     :: scenario #14
+2024-03-17 09:48:28,170 :: root :: INFO     :: scenario #15
+2024-03-17 09:48:28,254 :: root :: INFO     :: scenario #16
+2024-03-17 09:48:28,338 :: root :: INFO     :: scenario #17
+2024-03-17 09:48:28,431 :: root :: INFO     :: scenario #18
+2024-03-17 09:48:28,519 :: root :: INFO     :: scenario #19
+2024-03-17 09:48:28,608 :: root :: INFO     :: scenario #20
+2024-03-17 09:48:28,698 :: root :: INFO     :: scenario #21
+2024-03-17 09:48:28,796 :: root :: INFO     :: scenario #22
+2024-03-17 09:48:29,351 :: root :: INFO     :: scenario #23
+2024-03-17 09:48:29,455 :: root :: INFO     :: scenario #24
+2024-03-17 09:48:29,552 :: root :: INFO     :: scenario #25
+2024-03-17 09:48:29,649 :: root :: INFO     :: scenario #26
+2024-03-17 09:48:29,748 :: root :: INFO     :: scenario #27
+2024-03-17 09:48:29,855 :: root :: INFO     :: scenario #28
+2024-03-17 09:48:29,957 :: root :: INFO     :: scenario #29
+2024-03-17 09:48:30,061 :: root :: INFO     :: scenario #30
+2024-03-17 09:48:30,172 :: root :: INFO     :: scenario #31
+2024-03-17 09:48:30,278 :: root :: INFO     :: scenario #32
+2024-03-17 09:48:30,844 :: root :: INFO     :: scenario #33
+2024-03-17 09:48:30,952 :: root :: INFO     :: scenario #34
+2024-03-17 09:48:31,060 :: root :: INFO     :: scenario #35
+2024-03-17 09:48:31,170 :: root :: INFO     :: scenario #36
+2024-03-17 09:48:31,281 :: root :: INFO     :: scenario #37
+2024-03-17 09:48:31,393 :: root :: INFO     :: scenario #38
+2024-03-17 09:48:31,507 :: root :: INFO     :: scenario #39
+2024-03-17 09:48:32,091 :: root :: INFO     :: scenario #40
+2024-03-17 09:48:32,212 :: root :: INFO     :: scenario #41
+2024-03-17 09:48:32,331 :: root :: INFO     :: scenario #42
+2024-03-17 09:48:32,450 :: root :: INFO     :: scenario #43
+2024-03-17 09:48:32,571 :: root :: INFO     :: scenario #44
+2024-03-17 09:48:32,693 :: root :: INFO     :: scenario #45
+2024-03-17 09:48:32,826 :: root :: INFO     :: scenario #46
+2024-03-17 09:48:33,426 :: root :: INFO     :: scenario #47
+2024-03-17 09:48:33,557 :: root :: INFO     :: scenario #48
+2024-03-17 09:48:33,687 :: root :: INFO     :: scenario #49
+2024-03-17 09:48:33,816 :: root :: INFO     :: scenario #50
+2024-03-17 09:48:33,947 :: root :: INFO     :: scenario #51
+2024-03-17 09:48:34,081 :: root :: INFO     :: scenario #52
+2024-03-17 09:48:34,692 :: root :: INFO     :: scenario #53
+2024-03-17 09:48:34,832 :: root :: INFO     :: scenario #54
+2024-03-17 09:48:34,970 :: root :: INFO     :: scenario #55
+2024-03-17 09:48:35,110 :: root :: INFO     :: scenario #56
+2024-03-17 09:48:35,251 :: root :: INFO     :: scenario #57
+2024-03-17 09:48:35,394 :: root :: INFO     :: scenario #58
+2024-03-17 09:48:36,006 :: root :: INFO     :: scenario #59
+2024-03-17 09:48:36,154 :: root :: INFO     :: scenario #60
+2024-03-17 09:48:36,302 :: root :: INFO     :: scenario #61
+2024-03-17 09:48:36,451 :: root :: INFO     :: scenario #62
+2024-03-17 09:48:37,091 :: root :: INFO     :: scenario #63
+2024-03-17 09:48:37,247 :: root :: INFO     :: scenario #64
+2024-03-17 09:48:37,400 :: root :: INFO     :: scenario #65
+2024-03-17 09:48:37,556 :: root :: INFO     :: scenario #66
+2024-03-17 09:48:37,712 :: root :: INFO     :: scenario #67
+2024-03-17 09:48:38,355 :: root :: INFO     :: scenario #68
+2024-03-17 09:48:38,518 :: root :: INFO     :: scenario #69
+2024-03-17 09:48:38,680 :: root :: INFO     :: scenario #70
+2024-03-17 09:48:38,843 :: root :: INFO     :: scenario #71
+2024-03-17 09:48:39,508 :: root :: INFO     :: scenario #72
+2024-03-17 09:48:39,678 :: root :: INFO     :: scenario #73
+2024-03-17 09:48:39,847 :: root :: INFO     :: scenario #74
+2024-03-17 09:48:40,018 :: root :: INFO     :: scenario #75
+2024-03-17 09:48:40,189 :: root :: INFO     :: scenario #76
+2024-03-17 09:48:40,849 :: root :: INFO     :: scenario #77
+2024-03-17 09:48:41,025 :: root :: INFO     :: scenario #78
+2024-03-17 09:48:41,202 :: root :: INFO     :: scenario #79
+2024-03-17 09:48:41,379 :: root :: INFO     :: scenario #80
+2024-03-17 09:48:42,038 :: root :: INFO     :: scenario #81
+2024-03-17 09:48:42,222 :: root :: INFO     :: scenario #82
+2024-03-17 09:48:42,404 :: root :: INFO     :: scenario #83
+2024-03-17 09:48:43,091 :: root :: INFO     :: scenario #84
+2024-03-17 09:48:43,280 :: root :: INFO     :: scenario #85
+2024-03-17 09:48:43,468 :: root :: INFO     :: scenario #86
+2024-03-17 09:48:43,657 :: root :: INFO     :: scenario #87
+2024-03-17 09:48:44,356 :: root :: INFO     :: scenario #88
+2024-03-17 09:48:44,550 :: root :: INFO     :: scenario #89
+2024-03-17 09:48:44,745 :: root :: INFO     :: scenario #90
+2024-03-17 09:48:45,448 :: root :: INFO     :: scenario #91
+2024-03-17 09:48:45,648 :: root :: INFO     :: scenario #92
+2024-03-17 09:48:45,846 :: root :: INFO     :: scenario #93
+2024-03-17 09:48:46,047 :: root :: INFO     :: scenario #94
+2024-03-17 09:48:46,738 :: root :: INFO     :: scenario #95
+2024-03-17 09:48:46,943 :: root :: INFO     :: scenario #96
+2024-03-17 09:48:47,149 :: root :: INFO     :: scenario #97
+2024-03-17 09:48:47,860 :: root :: INFO     :: scenario #98
+2024-03-17 09:48:48,070 :: root :: INFO     :: scenario #99
+2024-03-17 09:48:48,280 :: root :: INFO     :: scenario #100
+2024-03-17 09:48:49,001 :: root :: INFO     :: scenario #101
+2024-03-17 09:48:49,216 :: root :: INFO     :: scenario #102
+2024-03-17 09:48:49,430 :: root :: INFO     :: scenario #103
+2024-03-17 09:48:50,164 :: root :: INFO     :: scenario #104
+2024-03-17 09:48:50,383 :: root :: INFO     :: scenario #105
+2024-03-17 09:48:50,602 :: root :: INFO     :: scenario #106
+2024-03-17 09:48:51,348 :: root :: INFO     :: scenario #107
+2024-03-17 09:48:51,571 :: root :: INFO     :: scenario #108
+2024-03-17 09:48:51,797 :: root :: INFO     :: scenario #109
+2024-03-17 09:48:52,558 :: root :: INFO     :: scenario #110
+2024-03-17 09:48:52,787 :: root :: INFO     :: scenario #111
+2024-03-17 09:48:53,015 :: root :: INFO     :: scenario #112
+2024-03-17 09:48:53,771 :: root :: INFO     :: scenario #113
+2024-03-17 09:48:54,003 :: root :: INFO     :: scenario #114
+2024-03-17 09:48:54,237 :: root :: INFO     :: scenario #115
+2024-03-17 09:48:54,993 :: root :: INFO     :: scenario #116
+2024-03-17 09:48:55,230 :: root :: INFO     :: scenario #117
+2024-03-17 09:48:55,469 :: root :: INFO     :: scenario #118
+2024-03-17 09:48:56,228 :: root :: INFO     :: scenario #119
+2024-03-17 09:48:56,470 :: root :: INFO     :: scenario #120
+2024-03-17 09:48:57,260 :: root :: INFO     :: scenario #121
+2024-03-17 09:48:57,505 :: root :: INFO     :: scenario #122
+2024-03-17 09:48:57,753 :: root :: INFO     :: scenario #123
+2024-03-17 09:48:58,537 :: root :: INFO     :: scenario #124
+2024-03-17 09:48:58,786 :: root :: INFO     :: scenario #125
+2024-03-17 09:48:59,037 :: root :: INFO     :: scenario #126
+2024-03-17 09:48:59,810 :: root :: INFO     :: scenario #127
+2024-03-17 09:49:00,065 :: root :: INFO     :: scenario #128
+2024-03-17 09:49:00,904 :: root :: INFO     :: scenario #129
+2024-03-17 09:49:01,161 :: root :: INFO     :: scenario #130
+2024-03-17 09:49:01,420 :: root :: INFO     :: scenario #131
+2024-03-17 09:49:02,214 :: root :: INFO     :: scenario #132
+2024-03-17 09:49:02,476 :: root :: INFO     :: scenario #133
+2024-03-17 09:49:02,739 :: root :: INFO     :: scenario #134
+2024-03-17 09:49:03,514 :: root :: INFO     :: scenario #135
+2024-03-17 09:49:03,781 :: root :: INFO     :: scenario #136
+2024-03-17 09:49:04,578 :: root :: INFO     :: scenario #137
+2024-03-17 09:49:04,847 :: root :: INFO     :: scenario #138
+2024-03-17 09:49:05,672 :: root :: INFO     :: scenario #139
+2024-03-17 09:49:05,945 :: root :: INFO     :: scenario #140
+2024-03-17 09:49:06,219 :: root :: INFO     :: scenario #141
+2024-03-17 09:49:07,018 :: root :: INFO     :: scenario #142
+2024-03-17 09:49:07,295 :: root :: INFO     :: scenario #143
+2024-03-17 09:49:08,115 :: root :: INFO     :: scenario #144
+2024-03-17 09:49:08,395 :: root :: INFO     :: scenario #145
+2024-03-17 09:49:09,286 :: root :: INFO     :: scenario #146
+2024-03-17 09:49:09,568 :: root :: INFO     :: scenario #147
+2024-03-17 09:49:09,852 :: root :: INFO     :: scenario #148
+2024-03-17 09:49:10,666 :: root :: INFO     :: scenario #149
+2024-03-17 09:49:10,960 :: root :: INFO     :: scenario #150
+2024-03-17 09:49:11,792 :: root :: INFO     :: scenario #151
+2024-03-17 09:49:12,085 :: root :: INFO     :: scenario #152
+2024-03-17 09:49:12,936 :: root :: INFO     :: scenario #153
+2024-03-17 09:49:13,230 :: root :: INFO     :: scenario #154
+2024-03-17 09:49:13,525 :: root :: INFO     :: scenario #155
+2024-03-17 09:49:14,335 :: root :: INFO     :: scenario #156
+2024-03-17 09:49:14,633 :: root :: INFO     :: scenario #157
+2024-03-17 09:49:15,453 :: root :: INFO     :: scenario #158
+2024-03-17 09:49:15,753 :: root :: INFO     :: scenario #159
+2024-03-17 09:49:16,579 :: root :: INFO     :: scenario #160
+2024-03-17 09:49:16,883 :: root :: INFO     :: scenario #161
+2024-03-17 09:49:17,742 :: root :: INFO     :: scenario #162
+2024-03-17 09:49:18,061 :: root :: INFO     :: scenario #163
+2024-03-17 09:49:18,907 :: root :: INFO     :: scenario #164
+2024-03-17 09:49:19,223 :: root :: INFO     :: scenario #165
+2024-03-17 09:49:20,066 :: root :: INFO     :: scenario #166
+2024-03-17 09:49:20,379 :: root :: INFO     :: scenario #167
+2024-03-17 09:49:21,224 :: root :: INFO     :: scenario #168
+2024-03-17 09:49:21,540 :: root :: INFO     :: scenario #169
+2024-03-17 09:49:22,388 :: root :: INFO     :: scenario #170
+2024-03-17 09:49:22,708 :: root :: INFO     :: scenario #171
+2024-03-17 09:49:23,557 :: root :: INFO     :: scenario #172
+2024-03-17 09:49:23,879 :: root :: INFO     :: scenario #173
+2024-03-17 09:49:24,725 :: root :: INFO     :: scenario #174
+2024-03-17 09:49:25,633 :: root :: INFO     :: scenario #175
+2024-03-17 09:49:25,969 :: root :: INFO     :: scenario #176
+2024-03-17 09:49:26,889 :: root :: INFO     :: scenario #177
+2024-03-17 09:49:27,218 :: root :: INFO     :: scenario #178
+2024-03-17 09:49:27,549 :: root :: INFO     :: scenario #179
+2024-03-17 09:49:28,407 :: root :: INFO     :: scenario #180
+2024-03-17 09:49:29,326 :: root :: INFO     :: scenario #181
+2024-03-17 09:49:29,661 :: root :: INFO     :: scenario #182
+2024-03-17 09:49:30,585 :: root :: INFO     :: scenario #183
+2024-03-17 09:49:30,923 :: root :: INFO     :: scenario #184
+2024-03-17 09:49:31,852 :: root :: INFO     :: scenario #185
+2024-03-17 09:49:32,194 :: root :: INFO     :: scenario #186
+2024-03-17 09:49:33,129 :: root :: INFO     :: scenario #187
+2024-03-17 09:49:33,475 :: root :: INFO     :: scenario #188
+2024-03-17 09:49:34,403 :: root :: INFO     :: scenario #189
+2024-03-17 09:49:34,752 :: root :: INFO     :: scenario #190
+2024-03-17 09:49:35,678 :: root :: INFO     :: scenario #191
+2024-03-17 09:49:36,029 :: root :: INFO     :: scenario #192
+2024-03-17 09:49:36,948 :: root :: INFO     :: scenario #193
+2024-03-17 09:49:37,302 :: root :: INFO     :: scenario #194
+2024-03-17 09:49:38,212 :: root :: INFO     :: scenario #195
+2024-03-17 09:49:38,568 :: root :: INFO     :: scenario #196
+2024-03-17 09:49:39,465 :: root :: INFO     :: scenario #197
+2024-03-17 09:49:40,419 :: root :: INFO     :: scenario #198
+2024-03-17 09:49:40,784 :: root :: INFO     :: scenario #199
+2024-03-17 09:49:41,738 :: root :: INFO     :: Report file dumped at: work_dir/track-tiny/checkpoint/metrics.json
+2024-03-17 09:49:41,738 :: root :: INFO     :: {"l2_distance_median":0.1295084962,"scaled_action_norm_median":0.1216055373,"reward_median":-0.1595358588}
+2024-03-17 09:49:51,956 :: root :: INFO     :: Traced JIT module saved at: work_dir/track-tiny/checkpoint/traced_policy.pt
+2024-03-17 09:49:51,956 :: root :: INFO     :: Generated 1024 test cases for Traced JIT module.
+2024-03-17 09:49:51,990 :: root :: INFO     :: Traced JIT module test cases saved at: work_dir/track-tiny/checkpoint/traced_policy_test_cases.bin
+2024-03-17 09:49:51,990 :: root :: INFO     :: Testing jit module...
+2024-03-17 09:49:51,995 :: root :: INFO     :: Loaded jit module from: work_dir/track-tiny/checkpoint/traced_policy.pt
+2024-03-17 09:49:52,042 :: root :: INFO     :: Loaded jit module test cases from: work_dir/track-tiny/checkpoint/traced_policy_test_cases.bin
+2024-03-17 09:49:52,044 :: root :: INFO     :: np.allclose(gt_actions, jit_actions)=True, rtol=0.001, atol=0.0001
